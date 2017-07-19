@@ -1,0 +1,25 @@
+<app-searchbar [ngClass]="{'is-hidden':!modal}" (closeSearch)="hideSearch()" ></app-searchbar>
+
+<nav class="nav">
+  <div class="nav-left">
+    <div class="nav-toggle" (click)="menu.open()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <a routerLink="/">
+      <app-logo></app-logo>
+    </a>
+
+  </div>
+  <div class="nav-center">
+    
+  </div>
+  <div class="nav-right">
+    <a class="nav-item" (click)="showSearch()">
+      <i class="fa fa-search"></i>
+    </a>
+    <app-cartbar></app-cartbar>
+  </div>  
+</nav>

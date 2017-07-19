@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { StorageService } from "app/providers/storage.service";
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'app';
+  constructor(public storage: StorageService){
+    storage.setDrive('local'); // session ou local
+  }
 }

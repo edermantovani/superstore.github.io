@@ -1,0 +1,14 @@
+<p>
+  about-page works!
+</p>
+<ul>
+  <li *ngFor="let pessoa of servicoPessoa.lista" >
+    <div *ngIf="pessoa.idade >= 15">
+    -Nome:{{pessoa.nome}}
+    <br />
+     Idade:{{pessoa.idade}}
+     <br />
+     Descrição:{{pessoa.descricao}}
+    </div>
+  </li>
+</ul>
